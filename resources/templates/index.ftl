@@ -115,10 +115,12 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <#-- @ftlvariable name="task" type="io.kraftsman.ktor.website.entities.Task" -->
+                    <#list tasks as task>
                     <tr>
                         <td class="table-text">
                             <div class="check">
-                                Task 標題
+                                ${task.title}
                             </div>
                         </td>
                         <td>
@@ -136,6 +138,7 @@
                             </form>
                         </td>
                     </tr>
+                    </#list>
                     </tbody>
                 </table>
             </div>
