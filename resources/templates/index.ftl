@@ -124,12 +124,14 @@
                             </div>
                         </td>
                         <td>
+                            <#if !task.completed>
                             <!-- 完成 Task 按鈕 -->
                             <form action="" method="POST" style="display: inline-block">
                                 <button type="submit" class="btn btn-success">
                                     <i class="fa fa-check"></i>完成
                                 </button>
                             </form>
+                            </#if>
                             <!-- 刪除 Task 按鈕 -->
                             <form action="" method="POST" style="display: inline-block">
                                 <button type="submit" class="btn btn-danger">
