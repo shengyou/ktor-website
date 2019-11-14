@@ -5,10 +5,10 @@ import io.ktor.application.Application
 import io.ktor.application.call
 import io.ktor.application.install
 import io.ktor.freemarker.FreeMarker
-import io.ktor.html.respondHtml
+import io.ktor.freemarker.FreeMarkerContent
+import io.ktor.response.respond
 import io.ktor.routing.get
 import io.ktor.routing.routing
-import kotlinx.html.*
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
@@ -22,15 +22,7 @@ fun Application.module(testing: Boolean = false) {
 
     routing {
         get("/") {
-            call.respondHtml {
-                head {
-                    title { +"Hello, HTML DSL" }
-                }
-                body {
-                    h1 { +"Hello, HTML DSL" }
-                    p { +"a sample Ktor application" }
-                }
-            }
+            call.respond(FreeMarkerContent("index.ftl", null))
         }
     }
 
