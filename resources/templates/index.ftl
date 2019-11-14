@@ -8,11 +8,11 @@
     <title>Ktor 範例程式</title>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-    <script src="js/jquery-2.2.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery-2.2.3.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
 
     <style>
         body {
