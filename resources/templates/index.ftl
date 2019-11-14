@@ -119,7 +119,7 @@
                     <#list tasks as task>
                     <tr>
                         <td class="table-text">
-                            <div class="check">
+                            <div class="${task.completed?then("check", "")}">
                                 ${task.title}
                             </div>
                         </td>
